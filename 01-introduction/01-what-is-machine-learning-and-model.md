@@ -10,7 +10,9 @@ With machine learning, you give the computer examples, and it figures out the ru
 Example : Student Score Prediction Project
 Throughout this series, we will build a Student Score Prediction system that predicts a student's final score based on study hours, sleep hours, attendance, and previous marks.
 Dataset Example
+
 study_hours,sleep_hours,attendance,previous_marks,final_score
+
 2,6,70,50,55
 3,7,75,55,60
 4,7,80,60,68
