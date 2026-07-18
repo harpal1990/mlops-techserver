@@ -7,63 +7,25 @@ Think of machine learning as teaching a computer to learn patterns from data ins
 With normal programming, you write rules yourself.
 With machine learning, you give the computer examples, and it figures out the rules.
 
-Example: Flower Species Prediction
+Example : Student Score Prediction Project
+Throughout this series, we will build a Student Score Prediction system that predicts a student's final score based on study hours, sleep hours, attendance, and previous marks.
+Dataset Example
+study_hours,sleep_hours,attendance,previous_marks,final_score
+2,6,70,50,55
+3,7,75,55,60
+4,7,80,60,68
+5,8,85,70,75
+6,8,90,75,82
+7,7,92,80,88
+Features vs Target
+Features (Inputs):
+- Study Hours
+- Sleep Hours
+- Attendance
+- Previous Marks
 
-Suppose you want a system that predicts whether a flower is Setosa, Versicolor, or Virginica based on features like:
+Target (Prediction):
+- Final Score
+How the Model Learns
+The model starts without any knowledge. During training, it analyzes historical data and assigns weights to each feature. For our sample project, study hours, attendance, and previous marks positively influence the prediction, while sleep hours have a negative coefficient due to the limited dataset.
 
-Petal length
-
-Petal width
-
-Sepal length
-
-Sepal width
-
-You could try writing if-else conditions — but it's nearly impossible to capture every pattern.
-
-Instead, you give the computer:
-
-150 flower samples
-
-Each sample has measurements
-
-Each sample has the correct species label
-
-The machine learning algorithm then learns the relationship between measurements and species.
-
-That learned relationship is called a model.
-
-### What Is a Model?
-
-A model is the final output of machine learning.
-
-It is not the data.
-It is not the algorithm.
-It is the pattern the algorithm learned from the data.
-
-Think of the model as:
-
-A mathematical function the computer created
-
-It takes inputs (flower measurements)
-
-It outputs predictions (species)
-
-Example: Flower Species Model
-
-After training, the model may learn things like:
-
-If petal length is very small, it's likely Setosa.
-
-If petal length is large and petal width is medium, it’s probably Virginica.
-
-You never coded these rules.
-The algorithm found them automatically based on the training data.
-
-When you pass a new flower’s measurements into the model:
-
-Input: Petal length = 5.1, Petal width = 1.8  
-Output: Species = Versicolor
-
-
-The model is simply applying what it learned earlier.
