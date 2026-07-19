@@ -11,10 +11,10 @@ model = joblib.load(
 
 student = pd.DataFrame([
     {
-        "study_hours": 9,
-        "sleep_hours": 7,
-        "attendance": 85,
-        "previous_marks": 75
+        "study_hours": 8,
+        "sleep_hours": 6,
+        "attendance": 80,
+        "previous_marks": 70
     }
 ])
 
